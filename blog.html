@@ -39,7 +39,7 @@
 
                     <p>O Shell é um intérprete entre o usuário e o Kernel, como demostra a imagem a baixo.</p>
                     <img src="/img/kernel.png">
-                    <p>Existem vários utilitários para interpretar e administrar o sistema operacional como o bash (Linux, MacOS), CMD (Windows), PowerShell (Windows, Linux, MacOS). Escolhi estudar pelo bash, pois, é o padrão do meu sistema, cada utilitário tem sua peculiaridade, tendo diferenças em alguns comandos, mas a base é a mesma.</p>
+                    <p>Existem vários utilitários para interpretar e administrar o sistema operacional como o bash (Linux, MacOS), CMD (Windows), PowerShell (Windows, Linux, MacOS). Escolhi estudar pelo bash, pois é o padrão do meu sistema, cada utilitário tem sua peculiaridade, tendo diferenças em alguns comandos, mas a base é a mesma.</p>
                     <p>Shell script é um arquivo que será interpretado por algum programa tipo Shell. Suas funcionalidades variam de manipulação de arquivos, execução de programas, impressão de texto, acesso a servidores, dentre outros. Sendo bem utilizado para facilitar tarefas como, por exemplo, para que eu consiga atualizar meu sistema operacional Manjaro uso um script simples "sudo pacman -Syyuu" com isso o bash irá buscar atualizações, sincronizar repositórios linux e se houver atualizações disponíveis irá atualizar.</p>
                     <p>O Instituto Federal Rio Grande do Norte (<a href="https://mange.ifrn.edu.br/shell-script-wikipedia/index.html">IFRN</a>) disponibilizou uma documentação em português. Esse exoesqueleto foi tirado de lá.</p>
                     <h3 class=""></h3>
@@ -79,6 +79,28 @@
                             <li>Status de saída</li>
                         </ul>
                     </ul>
+                    <hr>
+                    <h3>Brincando com o Bash</h3>
+                    <p>Quando estou aprendendo algo sempre gosto de ver exemplos para ter noção do que as palavras tentam explicar, e nada como experimentar para abrir a mente. Há uma série chamada <a href="https://www.primevideo.com/detail/Mr-Robot/0ND5POOAYD6A4THTH7C1TD3TYE">Mr. Robot</a>, onde um haker utiliza de um terminal para fazer invasões, vale a pena assistir. Entender como funciona seu sistema operacional e principalmente o linux para quem pretende mexer com servidores é fundamental na formação de um bom desenvolvedor, cientista de dados ou quaisquer outra ária relacionada.</p>
+                    <p>Comecei tentando entender o que era um arquivo .sh ele é composto por um Shebang (#! caminho do bash) e em seguida o script. Criei um arquivo e o chamei-o de eso.sh nele escrevi o seguinte:</p>
+                    <p class="cod">#!/bin/bash<br>
+                        <br>
+                        #Linhas do script<br>
+                        echo 'Inicio do meu env'<br>
+                        echo ' '<br>
+                        env | grep -v '[:;]' | sort</p>
+                    <p>"#Linhas do script" é um comentário</p>
+                    <p>Porém, me deparei com a seguinte questão, como fazer para executar esse script salvo em um arquivo .sh? Busquei como acessar um arquivo e executa-lo, e para isso tive que entender e aprender os seguintes comandos:</p>
+                    <ul>
+                        <li>ls - Abreviação de "list", permite listar tudo que há no diretório atual.</li>
+                        <li>cd - Abreviação de "cahnge directory", permite acessar a um dirétorio dentro do diretório atual.</li>
+                        <li>pws - Abreviação de "print working directory", mostra o caminho completo do diretorio atual.</li>
+                        <li>cd .. - É a junção do comando cd com ponto seguido de ponto, o que da acesso ao dirétorio pai do seu atual.</li>
+                        <li>bash - Permite executar um script shell</li>
+                    </ul>
+                    <p>Cheguei nesse resultado:</p>
+                    <img src="/img/bahs_1.png" alt="Imgem com o exemplo do meu terminal">
+                    <p><br>Ps. Todos os dias estarei atualizando esse post, nele descreverei todo meu processo de aprendizado com shell.</p>
                     <div id="author">
                         <img class="img_author" src="img/me.jpg" alt="">
                         <address>JhonFS</address>
