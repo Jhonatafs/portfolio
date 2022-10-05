@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jhonata Sande">
+    <meta name="description" content="um blog sobre minha trajetoria">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
+    <script src="https://kit.fontawesome.com/0c2f8cb29c.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <title>.blog</title>
+</head>
+<body>
+    <div id="body_blog">
+        <header id="header_blog" id="top">
+            <div class="header_blog_ajust">
+                <h1>.blog</h1>
+                <p>...aqui compartilho o pouquinho que sei, seja bem vindo(a)</p>
+            </div>
+            <div id="navbar_header">
+                <a href="/index.html" target="_self"><i class="fa-solid fa-earth-americas"></i></a> 
+                <a href="https://github.com/Jhonatafs" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                <a href="https://www.linkedin.com/in/jhonfs/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_jhoniris/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </header>
+        <main>
+            <article class="default_article">
+                <h2 class="title">Shell</h2>                   
+                <div class="article_content">
+                    <p>Comecei a buscar como funciona a comunicação entre o sistema físico e o usuário, na minha busca me deparei com o Kernel que é um intermediário entre o sistema operacional e os hardwares, sua arquitetura pode ser: monolitico, microkernel, híbrido, nanonúcleo, exonúcleo. O Kernel das distros linux fora escrita em C, para acessa-lo pode ser pela interface gráfica ou pelo Shell que é meu atual objeto de estudo.
+
+                    <p>O Shell é um intérprete entre o usuário e o Kernel, como demostra a imagem a baixo.</p>
+                    <img src="/img/kernel.png">
+                    <p>Existem vários utilitários para interpretar e administrar o sistema operacional como o bash (Linux, MacOS), CMD (Windows), PowerShell (Windows, Linux, MacOS). Escolhi estudar pelo bash, pois é o padrão do meu sistema, cada utilitário tem sua peculiaridade, tendo diferenças em alguns comandos, mas a base é a mesma.</p>
+                    <p>Shell script é um arquivo que será interpretado por algum programa tipo Shell. Suas funcionalidades variam de manipulação de arquivos, execução de programas, impressão de texto, acesso a servidores, dentre outros. Sendo bem utilizado para facilitar tarefas como, por exemplo, para que eu consiga atualizar meu sistema operacional Manjaro uso um script simples "sudo pacman -Syyuu" com isso o bash irá buscar atualizações, sincronizar repositórios linux e se houver atualizações disponíveis irá atualizar.</p>
+                    <p>O Instituto Federal Rio Grande do Norte (<a href="https://mange.ifrn.edu.br/shell-script-wikipedia/index.html">IFRN</a>) disponibilizou uma documentação em português. Esse exoesqueleto foi tirado de lá.</p>
+                    <h3 class=""></h3>
+                    <ul>
+                        <li>Selecionar Shell</li>
+                        <li>Comentários</li>
+                        <li>Variáveis</li>
+                        <ul>
+                            <li>Variáveis Pré-definidas</li>
+                            <li>Variáveis Globais</li>
+                            <li>Array</li>
+                            <li>Chamar variáveis</li>
+                            <li>Remover Variáveis</li>
+                        </ul>
+                        <li>If</li>
+                        <li>If-else</li>
+                        <li>Else-if</li>
+                        <li>Case</li>
+                        <li>Expressões Regulares</li>
+                        <li>Operadores</li>
+                        <ul>
+                            <li>Operadores Aritméticos</li>
+                            <li>Operadores Aritméticos</li>
+                            <li>Operadores Booleanos</li>
+                            <li>Operadores para Teste de Arquivos</li>
+                            <li>Operadores Relacionais</li>
+                            <li>Operadores de String</li>
+                            
+                        </ul>
+                        <li>Loop</li>
+                        <ul>
+                            <li>For</li>
+                            <li>While</li>
+                        </ul>
+                        <li>Funções</li>
+                        <ul>
+                            <li>Status de saída</li>
+                        </ul>
+                    </ul>
+                    <hr>
+                    <h3>Brincando com o Bash</h3>
+                    <p>Quando estou aprendendo algo sempre gosto de ver exemplos para ter noção do que as palavras tentam explicar, e nada como experimentar para abrir a mente. Há uma série chamada <a href="https://www.primevideo.com/detail/Mr-Robot/0ND5POOAYD6A4THTH7C1TD3TYE">Mr. Robot</a>, onde um haker utiliza de um terminal para fazer invasões, vale a pena assistir. Entender como funciona seu sistema operacional e principalmente o linux para quem pretende mexer com servidores é fundamental na formação de um bom desenvolvedor, cientista de dados ou quaisquer outra ária relacionada.</p>
+                    <p>Comecei tentando entender o que era um arquivo .sh ele é composto por um Shebang (#! caminho do bash) e em seguida o script. Criei um arquivo e o chamei-o de eso.sh nele escrevi o seguinte:</p>
+                    <p class="cod">#!/bin/bash<br>
+                        <br>
+                        #Linhas do script<br>
+                        echo 'Inicio do meu env'<br>
+                        echo ' '<br>
+                        env | grep -v '[:;]' | sort</p>
+                    <p>"#Linhas do script" é um comentário</p>
+                    <p>Porém, me deparei com a seguinte questão, como fazer para executar esse script salvo em um arquivo .sh? Busquei como acessar um arquivo e executa-lo, e para isso tive que entender e aprender os seguintes comandos:</p>
+                    <ul>
+                        <li>ls - Abreviação de "list", permite listar tudo que há no diretório atual.</li>
+                        <li>cd - Abreviação de "cahnge directory", permite acessar a um dirétorio dentro do diretório atual.</li>
+                        <li>pws - Abreviação de "print working directory", mostra o caminho completo do diretorio atual.</li>
+                        <li>cd .. - É a junção do comando cd com ponto seguido de ponto, o que da acesso ao dirétorio pai do seu atual.</li>
+                        <li>bash - Permite executar um script shell</li>
+                    </ul>
+                    <p>Cheguei nesse resultado:</p>
+                    <img src="/img/bahs_1.png" alt="Imgem com o exemplo do meu terminal">
+                    <p><br>Então comecei a entrar em alguns fóruns, sites e vídeos sobre a linguagem Shell e em um fórum achei uma indicação do livro <a href="https://www.shellscript.com.br/">Shell Script Profissional</a> de Aurelio Marinho Jargas, através desse livro estou conhecendo muito mais sobre essa linguagem tão importante</p>
+                    <div class="author">
+                        <img class="img_author" src="../../img/me.jpg" alt="">
+                        <address>JhonFS</address>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; - 2022</p>
+            <p>By jhonfs.contato@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
