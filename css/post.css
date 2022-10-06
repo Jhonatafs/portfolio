@@ -1,0 +1,35 @@
+/*Content*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+#main__post {
+    width: 40vw;
+    margin: auto;
+    background-color: #151416d4;
+    padding: 0.8rem 10vw 2rem;
+    border-radius: 3rem;
+}
+
+.post__title {
+    border-left: 2px solid #00fa4b;
+    padding-left: 1rem;
+    font-size: 1.9rem;
+    color: #00fa4b;
+}
+
+#main__post h3 {
+    color: #00fa4b;
+}
+
+#main__post p, li {
+    color: #FFFBF2;
+}
+
+#main__post a {
+    color: #d83b58;
+}
+
+#main__post img {
+    display: flex;
+    color: #d83b58;
+    max-width: 40vw;
+}
