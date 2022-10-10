@@ -16,16 +16,27 @@
 <body>
     <div id="page">
         <header id="header">
-            <a id="myBlog" href="../../index.html">
-                <h1>Blog</h1>
+            <a id="logo" href="../blog.html">
+                    <h1>Blog</h1>
             </a>
             <nav id="menu">
                 <ul>
-                    <li><a href="../blog.html">Home</a></li>
-                    <li><a href="../index.html">Portfolio</a></li>
-                    <li><a href="https://github.com/Jhonatafs" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/jhonfs/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/_jhoniris/" target="_blank">Instagram</a></li>
+                    <li><a href="../index.html">
+                        <sapn class="menu__text">Portfolio</sapn>
+                        <span class="menu__icon"><i class="fa-solid fa-mug-hot"></i></span>
+                    </a></li>
+                    <li><a href="https://github.com/Jhonatafs" target="_blank">
+                        <sapn class="menu__text">GitHub</sapn>
+                        <span class="menu__icon"><i class="fa-brands fa-github-alt"></i></span>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/jhonfs/" target="_blank">
+                        <sapn class="menu__text">LinkedIn</sapn>
+                        <span class="menu__icon"><i class="fa-brands fa-linkedin"></i></span>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/_jhoniris/" target="_blank">
+                        <sapn class="menu__text">Instagram</sapn>
+                        <span class="menu__icon"><i class="fa-brands fa-instagram"></i></span>
+                    </a></li>
                 </ul>
             </nav>
         </header>
@@ -79,12 +90,15 @@
                     <h3>Brincando com o Bash</h3>
                     <p>Quando estou aprendendo algo sempre gosto de ver exemplos para ter noção do que as palavras tentam explicar, e nada como experimentar para abrir a mente. Há uma série chamada <a href="https://www.primevideo.com/detail/Mr-Robot/0ND5POOAYD6A4THTH7C1TD3TYE">Mr. Robot</a>, onde um haker utiliza de um terminal para fazer invasões, vale a pena assistir. Entender como funciona seu sistema operacional e principalmente o linux para quem pretende mexer com servidores é fundamental na formação de um bom desenvolvedor, cientista de dados ou quaisquer outra ária relacionada.</p>
                     <p>Comecei tentando entender o que era um arquivo .sh ele é composto por um Shebang (#! caminho do bash) e em seguida o script. Criei um arquivo e o chamei-o de eso.sh nele escrevi o seguinte:</p>
-                    <p class="cod">#!/bin/bash<br>
-                        <br>
-                        #Linhas do script<br>
-                        echo 'Inicio do meu env'<br>
-                        echo ' '<br>
-                        env | grep -v '[:;]' | sort</p>
+                    <p class="cod">
+                        <code>
+                            #!/bin/bash<br><br>
+                            #Linhas do script<br>
+                            echo 'Inicio do meu env'<br>
+                            echo ' '<br>
+                            env | grep -v '[:;]' | sort
+                        </code>
+                    </p>
                     <p>"#Linhas do script" é um comentário</p>
                     <p>Porém, me deparei com a seguinte questão, como fazer para executar esse script salvo em um arquivo .sh? Busquei como acessar um arquivo e executa-lo, e para isso tive que entender e aprender os seguintes comandos:</p>
                     <ul>

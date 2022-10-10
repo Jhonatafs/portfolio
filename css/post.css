@@ -1,12 +1,13 @@
 /*Content*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
+
 #main__post {
     width: 40vw;
     margin: auto;
-    background-color: #151416d4;
+    background-color: #15141678;
     padding: 0.8rem 6vw 2rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 .post__title {
@@ -24,6 +25,11 @@
     color: #FFFBF2;
 }
 
+#main__post p {
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 #main__post a {
     color: #d83b58;
 }
@@ -32,4 +38,25 @@
     display: flex;
     color: #d83b58;
     max-width: 40vw;
+}
+
+#main__post .cod {
+    background-color: #02000f;
+    color: #00fa4b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 900px){
+    #main__post {
+        width: 98vw;
+        box-sizing: border-box;
+    }
+
+    #main__post img {
+        max-width: 85vw;
+    }
+
+
 }
