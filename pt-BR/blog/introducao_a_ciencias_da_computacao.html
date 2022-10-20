@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jhonata Sande">
+    <meta name="description" content="um blog sobre minha trajetoria">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/blog.css">
+    <link rel="stylesheet" type="text/css" href="../../css/post.css">
+    <script src="https://kit.fontawesome.com/0c2f8cb29c.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="../../../img/favicon.svg">
+    <title>.blog</title>
+</head>
+<body>
+    <div id="page">
+        <header id="header">
+            <a id="logo" href="../blog.html">
+                    <h1>Blog</h1>
+            </a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html">
+                        <sapn class="menu__text">Portfolio</sapn>
+                        <span class="menu__icon"><i class="fa-solid fa-mug-hot"></i></span>
+                    </a></li>
+                    <li><a href="https://github.com/Jhonatafs" target="_blank">
+                        <sapn class="menu__text">GitHub</sapn>
+                        <span class="menu__icon"><i class="fa-brands fa-github-alt"></i></span>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/jhonfs/" target="_blank">
+                        <sapn class="menu__text">LinkedIn</sapn>
+                        <span class="menu__icon"><i class="fa-brands fa-linkedin"></i></span>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/_jhoniris/" target="_blank">
+                        <sapn class="menu__text">Instagram</sapn>
+                        <span class="menu__icon"><i class="fa-brands fa-instagram"></i></span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <div id="main__post">
+                <h2 class="post__title">Introdução a Ciências da Computação</h2>
+                <p>Surgindo a partir da necessidade de resolver ou facilitar problemas matemáticos e sendo revolucionada em tempos de crises como a Primeira Guerra Mundial, o que era apenas conceitos lógicos e paradigmas matemáticos se tornou a ciência que estuda o desenvolvimento de software e complementa o campo da engenharia e robótica, além de ser responsável pela globalização como ela é hoje.</p>
+                <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" target="_blank">A História da Ciências da Computação</a></li>
+                    <li><a href="#tp--Algoritimo">Algorítimos</a></li>
+                    <li><a href="#tp--LigicaP">Lógica de Programação</a></li>
+                </ul>
+                <h3 id="tp--Algoritimo">Algorítimos</h3>
+                <p>Instruções em sequência lógica para determinada ação, próximo tópico.</p>
+                <p>Brincadeiras a parte, aí vai uma algorítimo para somar dois números primos:</p>
+                <p class="cod">
+                    <code>
+                        Escolha um número<br>
+                        É um número primo?<br>
+                        Se sim, anotar no papel<br>
+                        Se não, escolher outro<br>
+                        Escolha outro número primo<br>
+                        Execute a soma dos números<br>
+                        Escreva o resultado no papel
+                    </code>
+                </p>
+                <p>Agora isso na linguagem Java:</p>
+                <p class="cod">
+                    <code>
+                        System.out.print("Escolha um número primo");<br><br>
+                        int numeroUm = entradaDeDados;nextInt();<br><br>
+                        validacaoDoNumero();<br><br>
+                        System.out.print("Escolha outro número primo");<br><br>
+                        validacaoDoNumero();<br><br>
+                        int numeroDois = entradaDeDados.nextInt();<br><br>
+                        System.out.print("Resultado da Soma: " numeroUm + NumeroDois);
+                    </code>
+                </p>
+                <p>Se você apenas usar os conhecimentos que adquiriu por toda sua vida, é possível entender o que eu quis fazer usando a linguagem Java. Ou seja, um Algorítimo é basicamente uma instrução, e para ser executada o individuo ou maquina responsável pela execução deve intender, e para isso utilizamos comandos, codificados na forma de idiomas para seres vivos, ou de linguagem de programação para máquinas.</p>
+                <h3 id="tp--LigicaP">Lógica de Programação</h3>
+                <p>É a lógica que rege como estruturar seu algorítimo. Para escrever o algorítimo da soma de dois números primos utilizei a sintaxe da linguagem Java, a sintaxe é a responsável por especificar como deve ser usado uma linguagem.</p>
+                <p>Utilizei de uma estrutura que me permite apresentar uma informação na tela, dentro do parenteses coloquei a informação.</p>
+                <p class="cod">
+                    <code>
+                        System.out.print("Escolha um número primo");
+                    </code>
+                </p>
+                <p>Depois declarei uma variável do conjunto dos números inteiros cujo nome foi numeroUm, esse nome me permite apelidar um espaço na memória da minha máquina para quando eu precisar usar eu achar esse espaço pelo nome, em seguida apelidei uma função que informa para a máquina que irá entrar um dado, e esse dado será armazenado no espaço da memória chamado numeroUm.  Repeti a mesma lógica para o outro número.</p>
+                <p class="cod">
+                    <code>
+                        int numeroUm = entradaDeDados;nextInt();
+                    </code>
+                </p>
+                <p>Em seguida validei através de uma função se o número era primitivo ou não. Uma função basicamente faz uma pergunta e recebe uma resposta, e depois retorna um resultado ou não.</p>
+                <p class="cod">
+                    <code>
+                        validacaoDoNumero();
+                    </code>
+                </p>
+                <p>No final do código apresentei o resultado concatenando uma frase com a soma dos números.</p>
+                <p class="cod">
+                    <code>
+                        System.out.print("Resultado da Soma: " numeroUm + NumeroDois);
+                    </code>
+                </p>
+                <p>Visto os conceitos dos dois tópicos aconcelho que aprenda a programa pequenos codigos com funções simples em Python, por ser uma linguagem relativamente simples, e muito usada. Deixarei alguns links como referência.</p>
+                <ul>
+                    <li><a href="https://www.coursera.org/learn/ciencia-computacao-python-conceitos-2">Introdução à Ciência da Computação com Python Parte 1 - USP</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=S9uPNppGsGo">Python - Curso em Vídeo</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=k6U-i4gXkLM&list=PLIaRqO3yNL3Lck2gIMVgJX5A2YjkSLmiZ">Introduction to Computer Science and Programming - MIT</a></li>
+                </ul>
+        </main>
+        <footer>
+            <p><span>&copy;</span> By <span>jhonfs</span>.contato@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
