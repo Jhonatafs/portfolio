@@ -31,7 +31,7 @@
 }
 
 #blog-hr {
-    width: 100vw;
+    width: 99vw;
     margin: auto;
     margin-bottom: 2rem;
     border-color: var(--color-menu);
@@ -67,7 +67,6 @@
 }
 
 #blog article .content {
-    width: calc(80vw - 14rem);
     margin-left: 1rem;
 }
 
@@ -115,6 +114,13 @@
 #article .quote {
     width: 50vw !important;
     margin: 1rem auto !important;
+}
+
+@media screen and (max-width: 1000px) {
+    #blog article {
+        max-width: 70vw;
+        width: 70vw;
+    }
 }
 
 @media screen and (max-width: 800px) {
