@@ -6,6 +6,34 @@
 
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: var(--color-bg);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-menu);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--color-bg);
+}
+
+::-webkit-resizer {
+    background-color: var(--color-secondary);
+}
+
+
+
 /* all
 *******/
 * {
@@ -15,6 +43,7 @@
 }
 a {text-decoration: none;}
 body {background-color: var(--color-bg)}
+hr {max-width: 97vw !important;}
 
 /* topbar
 *******/
@@ -200,7 +229,8 @@ body {background-color: var(--color-bg)}
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 2rem;
     }
 
     #topbar h1 {
