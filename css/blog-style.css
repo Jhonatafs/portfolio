@@ -47,6 +47,7 @@
     text-align: center;
     color: var(--color-primary);
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 #blog article {
