@@ -48,7 +48,7 @@ function notChange(){
     if(this.notIndex === 0){
         return 'X';
     } else {
-        return '0';
+        return 'O';
     }
 }
 
@@ -62,17 +62,12 @@ function checkSymbol(b){
 }
 
 function reset(){
+    let r = ['#b0', '#b1', '#b2', '#b3', '#b4', '#b5', '#b6', '#b7', '#b8', ];
     if(confirm('Deseja reniciar o jogo?')){
         document.getElementById('status').textContent = `Jogo da Velha`;
-        document.querySelector('#b0').innerHTML = '';
-        document.querySelector('#b1').innerHTML = '';
-        document.querySelector('#b2').innerHTML = '';
-        document.querySelector('#b3').innerHTML = '';
-        document.querySelector('#b4').innerHTML = '';
-        document.querySelector('#b5').innerHTML = '';
-        document.querySelector('#b6').innerHTML = '';
-        document.querySelector('#b7').innerHTML = '';
-        document.querySelector('#b8').innerHTML = '';
+    for(let i = 0; i < 9 ; i++){
+        document.querySelector(r[i]).innerHTML = '';
+    }
         this.endGame = false;
         del();
     }else{}
