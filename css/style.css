@@ -144,14 +144,18 @@ hr {max-width: 97vw !important;}
 #about p {
     color: var(--color-primary);
     font-size: 1.3rem;
-    margin: 0 1rem 0;
+    margin-left: 1rem;
+}
+
+#curriculum {
+    color: var(--color-primary);
 }
 
 #about .div-icon {
     display: flex;
     justify-content: left;
     gap: 1rem;
-    margin: 0 1rem 0;
+    margin-left: 1rem;
 }
 
 #about i {
@@ -159,7 +163,8 @@ hr {max-width: 97vw !important;}
     color: var(--color-primary);
 }
 
-#about i:hover {
+#about i:hover,
+#curriculum:hover {
     color: var(--color-secondary);
 }
 
@@ -232,9 +237,13 @@ hr {max-width: 97vw !important;}
 #portfolio .text p {
     width: 70%;
     text-align: center;
-    margin: .4rem auto 0;
-    font-size: 1.2rem;
+    margin: .9rem auto 0;
+    font-size: 1.1rem;
     color: var(--color-primary);
+}
+
+#portfolio .text i {
+    font-size: 1.3rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -292,9 +301,14 @@ hr {max-width: 97vw !important;}
 
     }
 
+    #about .div-icon {
+        margin-left: 0;
+    }
+
     #about p {
         font-size: 1rem;
         text-align: left;
+        margin-left: 0;
     }
 
     #about .div-icon {
@@ -307,6 +321,10 @@ hr {max-width: 97vw !important;}
 
     #about img {
         max-width: 60vw;
+    }
+
+    #curriculum {
+        margin-left: 0;
     }
 
     /* portfolio
@@ -344,7 +362,6 @@ hr {max-width: 97vw !important;}
 
     #portfolio .text p {
         width: 95%;
-        font-size: 1.1rem;
     }
 }
 

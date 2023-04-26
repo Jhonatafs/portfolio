@@ -62,6 +62,7 @@
     cursor: pointer;
 }
 
-#pvsc {
-    opacity: 0.2;
+.active-mode {
+    background-color: #77A656 !important;
+    border-radius: 5% !important;
 }
