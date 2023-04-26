@@ -246,6 +246,20 @@ hr {max-width: 97vw !important;}
     font-size: 1.3rem;
 }
 
+main {
+    margin-bottom: 1rem;
+}
+
+footer {
+    width: 90vw;
+    text-align: center;
+    padding: 1rem 0;
+    margin: auto;
+    color: var(--color-secondary);
+    background-color: var(--color-menu);
+    border-radius: 10px 10px 0 0;
+}
+
 @media screen and (max-width: 800px) {
     /* topbar
     *******/
