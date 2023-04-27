@@ -316,13 +316,13 @@ footer {
     }
 
     #about .div-icon {
-        margin-left: 0;
+        margin-left: 1rem;
     }
 
     #about p {
         font-size: 1rem;
         text-align: left;
-        margin-left: 0;
+        margin-left: 1rem;
     }
 
     #about .div-icon {
