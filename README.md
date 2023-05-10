@@ -1,4 +1,8 @@
-## I'm
->Hello, I'm Jhonata, computer science student, Brazilian, passionate about reading and RPG. This website is to present what I do, and it was designed to have the look of Bash.
+## My portfolio 
+Hello, I'm Jhonata, currently studying Computer Science, and I created this portfolio in order to present what I know how to do.
+<hr>
 
-### [Website](https://jhonfs.vercel.app)
+## Meu portfólio.
+Olá, eu sou o Jhonata, atualmente estudo Ciências da Computação, e criei esse portifólio afim de apresentar o que sei fazer.
+
+### [Website](https://jhonfs.vercel.app) | [LinkdIn](https://www.linkedin.com/in/jhonfs/) | [Instagram](https://www.instagram.com/_jhoniris/)
