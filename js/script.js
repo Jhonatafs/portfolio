@@ -42,5 +42,5 @@ function themeDark(){
 }
 
 function cookieTheme(){
-    document.cookie = 'themeDark=' + this.index + '; Expires=Wed, 21 Oct 3000 00:00:00 GMT;';
+    document.cookie = 'themeDark=' + this.index + '; Expires=Wed, 21 Oct 3000 00:00:00 GMT; path=/';
 }
