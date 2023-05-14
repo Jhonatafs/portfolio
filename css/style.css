@@ -260,7 +260,7 @@ footer {
     border-radius: 10px 10px 0 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     /* topbar
     *******/
     #topbar {
