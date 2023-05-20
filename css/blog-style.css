@@ -152,7 +152,7 @@ img {
     width: 70%;
     margin: auto;
     border: dotted 1px var(--color-primary);
-    box-shadow: -5px 5px 0 var(--color-secondary);
+    box-shadow: -3px 3px 0 var(--color-secondary);
     margin-bottom: 1.5rem !important;
     transition: all .3s ease-in;
 }
