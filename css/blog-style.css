@@ -151,7 +151,7 @@ img {
     padding: .5rem 0;
     width: 70%;
     margin: auto;
-    border: dotted 1px var(--color-primary);
+    border: dotted 1px var(--color-secondary);
     box-shadow: -5px 5px 0 var(--color-menu);
     margin-bottom: 1.5rem !important;
     transition: all .3s ease-in;
