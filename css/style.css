@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-track-piece {
-    background-color: var(--color-bg);
+    background-color: var(--color-secondary);
 }
 
 ::-webkit-scrollbar-button {
