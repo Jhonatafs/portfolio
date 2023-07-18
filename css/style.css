@@ -47,6 +47,9 @@
 a {text-decoration: none;}
 body {background-color: var(--color-bg)}
 hr {max-width: 97vw !important;}
+.link {
+    color: var(--color-menu);
+}
 
 /* topbar
 *******/
