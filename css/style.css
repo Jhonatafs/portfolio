@@ -258,11 +258,10 @@ main {
 footer {
     width: 90vw;
     text-align: center;
-    padding: 1rem 0;
-    margin: auto;
+    padding: .7rem 0;
+    margin: 1rem auto;
     color: var(--color-secondary);
     background-color: var(--color-menu);
-    border-radius: 10px 10px 0 0;
 }
 
 @media screen and (max-width: 900px) {
