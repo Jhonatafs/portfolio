@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap');
+
+/**Var
+*/
+:root {
+    /*Colors*/
+    --body-background: #363636;
+    --color-lux: #C2C0A6;
+    --color-text: #f1f1f1;
+}
+
+/**All
+*/
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .4s ease-in-out;
+    font-family: 'Source Serif 4', serif;
+}
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+body {
+    background-color: var(--body-background);
+    max-width: 600px;
+    margin: 0 auto;
+}
+hr {max-width: 97vw !important;}
+p {
+    color: var(--color-text);
+    line-height: 130%;
+    /*text-indent: 0.6rem;*/
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+}
+
+h1 {font-size: 1.5;}
+h2 {font-size: 1.4;}
+h3 {font-size: 1.3;}
+h4 {font-size: 1.2;}
+
+.button {
+    padding: .2rem .3rem;
+    color: var(--color-text);
+    background-color: transparent;
+    border: 1px dashed transparent;
+    padding: .3rem 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    border-color: var(--color-text);
+    padding: .3rem;
+}
+
+/**NavBar
+*/
+
+#navbar {
+    padding-top: 1rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+#navbar, #navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar #logo {
+    color: var(--color-text);
+}
+
+#navbar button {
+    background-color: transparent;
+    border: 1px dashed transparent;
+    padding: .3rem;
+    cursor: pointer;
+}
+
+#navbar button:hover {
+    border-color: var(--color-lux);
+}
+
+#navbar i {
+    color: var(--color-lux);
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 .1rem;
+}
+
+#navbar a {
+    color: var(--color-text);
+    padding: .3rem;
+    border: 1px dashed transparent;
+}
+
+#navbar a:hover {
+    border-color: var(--color-text);
+}
+
+/**Welcome
+*/
+#welcome {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+#welcome img {
+    width: 20%;
+    border-radius: 30%;
+}
+
+/**Main: Arquivos
+*/
+main {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+#title {
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-weight: 400;
+    color: var(--color-lux);
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+section .title-article:hover {
+    padding-left: .5rem;
+}
+
+/**Footer
+*/
+footer {
+    margin-top: 1rem;
+}
+
+footer ul {
+    margin-top: 1rem;
+}
+
+footer li {
+    list-style: none;
+    padding: .3rem;
+    color: var(--color-text);
+}
