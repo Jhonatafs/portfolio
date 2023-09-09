@@ -67,6 +67,7 @@ h4 {font-size: 1.1rem;}
     max-width: 90vw;
     margin: 0 auto;
     font-size: 1.6rem;
+    color: var(--color-lux);
 }
 
 #navbar, #navbar ul {
@@ -75,11 +76,6 @@ h4 {font-size: 1.1rem;}
     justify-content: space-between;
     align-items: center;
 }
-
-#logo {
-    color: var(--color-lux);
-}
-
 #navbar button {
     background-color: transparent;
     border: 1px dashed transparent;
