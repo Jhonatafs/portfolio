@@ -86,7 +86,7 @@ h4 {font-size: 1.1rem;}
     border-color: var(--color-lux);
 }
 
-#navbar i, #navbar h3, #navbar a {
+#navbar i, #logo {
     color: var(--color-lux);
 }
 
@@ -96,13 +96,12 @@ h4 {font-size: 1.1rem;}
 }
 
 #navbar a {
-    color: var(--color-text);
     padding: .3rem;
     border: 1px dashed transparent;
 }
 
 #navbar a:hover {
-    border-color: var(--color-text);
+    border-color: var(--color-lux);
 }
 
 /**Welcome
