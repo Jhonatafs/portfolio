@@ -167,3 +167,9 @@ footer li {
     padding: .3rem;
     color: var(--color-text);
 }
+
+/** Post
+*/
+#post p {
+    color: var(--color-text);
+}
