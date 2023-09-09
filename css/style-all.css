@@ -156,11 +156,12 @@ section .title-article:hover {
 /**Footer
 */
 footer {
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
 }
 
 footer ul {
     margin-top: .3rem;
+    padding-left: .3rem;
 }
 
 footer li {
