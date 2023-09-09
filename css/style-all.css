@@ -173,5 +173,6 @@ footer li {
 */
 #post p {
     color: var(--color-text);
-    text-indent: .4rem;
+    text-indent: .6rem;
+    line-height: 135%
 }
