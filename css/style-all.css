@@ -167,6 +167,11 @@ footer li {
 
 /** Post
 */
+#post {
+    margin-top: 2rem;
+}
+
+
 #post p {
     color: var(--color-text);
     text-indent: .6rem;
