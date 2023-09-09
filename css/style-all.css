@@ -118,7 +118,8 @@ h4 {font-size: 1.1rem;}
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
+    width: 800px;
+    max-width: 90vw;
     margin: 3rem auto;
 }
 
