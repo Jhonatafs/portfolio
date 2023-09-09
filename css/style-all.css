@@ -139,7 +139,7 @@ main {
 
 main p {
     font-weight: 400;
-    color: var(--color-text);
+    color: var(--color-lux);
 }
 
 main section {
