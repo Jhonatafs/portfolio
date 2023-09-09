@@ -67,7 +67,6 @@ h4 {font-size: 1.1rem;}
     max-width: 90vw;
     margin: 0 auto;
     font-size: 1.6rem;
-    color: var(--color-lux) !important;
 }
 
 #navbar, #navbar ul {
@@ -87,7 +86,7 @@ h4 {font-size: 1.1rem;}
     border-color: var(--color-lux);
 }
 
-#navbar i {
+#navbar i, #navbar h3, #navbar a {
     color: var(--color-lux);
 }
 
