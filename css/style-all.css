@@ -178,3 +178,16 @@ footer li {
     text-indent: .6rem;
     line-height: 135%
 }
+
+@media screen and (max-width 800px){
+     /**Welcome
+     */
+    #welcome {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #welcome img {
+        width: 50%;
+    }
+}
