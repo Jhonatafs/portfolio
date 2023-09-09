@@ -173,4 +173,5 @@ footer li {
 */
 #post p {
     color: var(--color-text);
+    text-indent: .4rem;
 }
