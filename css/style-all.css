@@ -261,5 +261,9 @@ footer li {
     .publi .data {
         max-width: 100%;
     }
+
+    .publi a {
+        width: min-content;
+    }
     
 }
