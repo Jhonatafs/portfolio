@@ -253,4 +253,9 @@ footer li {
     section .title-article:hover {
         padding-left: 0rem;
     }
+
+    article .data {
+        width: max-content;
+    }
+    
 }
