@@ -212,7 +212,7 @@ footer li {
         flex-direction: column;
     }
 
-    #welcome img {
-        width: 100%;
+    #meimg {
+        width: 70vw;
     }
 }
