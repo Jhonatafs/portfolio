@@ -218,7 +218,7 @@ footer li {
 
     /**Post
     */
-    #post {
+    #post, #bibliography {
         max-width: 95vw;
         margin: auto;
     }
