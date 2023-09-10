@@ -259,11 +259,11 @@ footer li {
     }
 
     .publi .data {
-        max-width: 100%;
+        width: max-content;
     }
 
     .publi a {
-        width: min-content;
+        width: fit-content;
     }
     
 }
