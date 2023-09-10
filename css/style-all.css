@@ -64,7 +64,6 @@ h4 {font-size: 1.1rem;}
 
 #navbar {
     padding-top: 1rem;
-    max-width: 90vw;
     margin: 0 auto;
 }
 
@@ -206,6 +205,9 @@ footer li {
 
 
 @media screen and (max-width: 800px){
+
+
+    
      /**Welcome
      */
     #welcome {
