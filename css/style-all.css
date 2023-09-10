@@ -256,6 +256,8 @@ footer li {
 
     article .data {
         width: max-content;
+         display: flex;
+        flex-wrap: nowrap;
     }
     
 }
