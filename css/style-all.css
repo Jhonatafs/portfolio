@@ -215,4 +215,10 @@ footer li {
     #meimg {
         width: 70vw;
     }
+
+    /**Post
+    */
+    #post {
+        max-width: 90vw;
+    }
 }
