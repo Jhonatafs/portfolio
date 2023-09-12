@@ -2,13 +2,13 @@
 */
 #navbar {
     padding-top: 1rem;
-    margin: 0 auto;
+    margin: 0;
 }
 
 #navbar, #navbar ul {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
 }
 #navbar button {
