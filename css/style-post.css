@@ -1,0 +1,61 @@
+#goback {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-lux);
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 1px dashed transparent;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#goback:hover {    
+    padding: .2rem .3rem;
+    border: 1px dashed var(--color-lux);
+}
+
+#post h1 {
+    font-size: 1.9rem;
+    margin: 2rem 0 1.5rem;
+}
+
+#post h2 {
+    font-size: 1.7rem;
+    margin: 1.5rem 0 .8rem;
+}
+
+#post h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 .8rem;
+}
+
+#post h4 {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 .8rem;
+}
+
+#post h5 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 .8rem;
+}
+
+#post p {
+    font-size: 1.2rem;
+    text-indent: .6rem;
+}
+
+#post figure {
+    margin-bottom: 1rem;
+    border: 1px dashed var(--color-lux);
+    padding: .4rem .2rem;
+}
+
+#post figure img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        max-width: 90vw;
+    }
+}

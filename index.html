@@ -4,43 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#363636">
     <script src="https://kit.fontawesome.com/7f2a2658dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/var.css">
     <link rel="stylesheet" href="css/style-all.css">
-    <link rel="icon" href="img/icon.png" type="image/png">
-    <script src="js/themes.js"></script>
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="icon" href="img/favicon.svg" color="#363636">
     <title>JhonFs</title>
 </head>
 <body>
     <nav id="navbar">
-            <h3 id="logo"><a href="http://jhonfs.com">Jhonfs</a></h3>
+            <h3 id="logo"><a href="http://jhonfs.com"> Jhonfs <i class="fa-solid fa-mug-hot"></i></a></h3>
         <ul>
             <li><a href="https://github.com/Jhonatafs" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
             <li><a href="https://www.linkedin.com/in/jhonfs" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><button onclick="changeTheme()">
-                <i id="lux" class="fa-solid fa-lightbulb"></i>
-            </button></li>
         </ul>
     </nav>
     <section id="welcome">
-        <img id="meimg" src="img/me.png" alt="">
-        <div>
-            <h3>Olá.</h3>
-            <p>Sou o Jhonata, nesse pequeno espaço da web, estarei postanto artigos, projetos e minhas notas de estudo.</p>
-            <a class="button" href="files/download/ JhonFs.pdf" target="_blank">Currículo <i class="fa-solid fa-download"></i></a>
-        </div>
+        <img id="meimg" src="img/me.gif" alt="">
+        <p>Bem-vindo ao meu pequeno espaço na web, sou o Jhon de Jhonata, derivado do latim <i>Ionathan</i>, que veio do grego <i>Ιωναθαν</i>, cuja origem vem do hebraico <i>יונתן</i>. Uso esse espaço para escrever, publica projetos, etc.</p>
     </section>
-    <main>
-        <h3 id="title">publicações</h3>
+    <main id="arquive">
+        <h3>Arquivos</h3>
         <article class="publi">
             <p class="data">2023-09-09</p>
-            <a class="title-article" href="files/posts/minhas-notas-1-o-alfabeto.html">
+            <a class="title" href="files/posts/minhas-notas-1-o-alfabeto.html">
                 <p>Minhas Notas #1: O Alfabeto</p>
             </a>
         </article>
         <article class="publi">
             <p class="data">2023-09-08</p>
-            <a class="title-article" href="files/posts/meu-caminho-para-as-ciencias-da-computacao.html">
+            <a class="title" href="files/posts/meu-caminho-para-as-ciencias-da-computacao.html">
                 <p>Meu caminho para as Ciências da Computação</p>
             </a>
         </article>
@@ -48,10 +43,8 @@
     <footer>
         <hr>
         <ul>
-            <li>Email: yonatan.fs@proton.me</li>
-            <li><a class="button" href="old/old.html">
-                Ver página antiga
-            </a></li>
+            <a href="files/download/ JhonFs.pdf" target="_blank">Currículo <i class="fa-solid fa-download"></i></a>
+            <li>yonatan.fs@proton.me <i class="fa-solid fa-envelope"></i></li>
         </ul>
     </footer>
 </body>
