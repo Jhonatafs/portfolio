@@ -1,35 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     /*Colors*/
-    --body-background: #363636;
-    --color-lux: #C2C0A6;
-    --color-text: #f1f1f1;
+    --body-background: #383838;
+    --color-lux: #ad7a7a;
+    --color-text: #dfdfdf;
 }
 
 * {
     margin: auto;
     padding: 0;
-    font-family: 'Source Serif 4', serif;
+    font-family: 'Roboto Slab', serif;
     max-width: 600px;
+}
+
+h1, h2, h3, h4, h5, span, li {
+    color: var(--color-text);
 }
 
 a {
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-lux) !important;
 }
 
 body {
     background-color: var(--body-background);
     max-width: 600px;
-    color: var(--color-text);
 }
 
 p {
     color: var(--color-text);
-    line-height: 1.5rem;
+    line-height: 140% !important;
     margin-bottom: 0.7rem;
     font-size: 1rem;
+}
+
+li {
+    line-height: 140% !important;
 }
 
 /**Footer
@@ -44,23 +51,15 @@ footer ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: .3rem;
-    gap: .2rem;
+    margin-top: .5rem;
+    gap: 3%;
 }
 
 footer li {
     list-style: none;
-    padding: .2rem;
-    border: 1px dashed transparent;
-    transition: all .4s ease-in-out;
-}
-
-footer li:hover {
-    border: 1px dashed var(--color-lux);
 }
 
 footer a, li {
-    color: var(--color-lux);
     margin: 0;
 }
 

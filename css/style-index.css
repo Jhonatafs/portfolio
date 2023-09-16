@@ -24,9 +24,12 @@
 
 /**Main: Arquivos
 */
+#arquive {
+    margin-top: 2rem;
+}
+
 #arquive .publi p {
     font-weight: 400;
-    color: var(--color-lux);
     margin: 0;
 }
 
@@ -47,6 +50,10 @@
 
 #arquive .title:hover {
     padding-left: .5rem;
+}
+
+#arquive .title p {
+    color: var(--color-lux);
 }
 
 @media screen and (max-width: 768px) {

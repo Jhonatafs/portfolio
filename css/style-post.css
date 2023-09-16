@@ -1,22 +1,25 @@
 #goback {
     display: inline-block;
     margin-top: 1rem;
-    color: var(--color-lux);
+    color: var(--color);
     text-decoration: none;
     font-size: 1.1rem;
-    border: 1px dashed transparent;
     cursor: pointer;
     transition: all .4s ease-in-out;
 }
 
-#goback:hover {    
-    padding: .2rem .3rem;
-    border: 1px dashed var(--color-lux);
+#goback:hover {
+    color: var(--color-lux);
+}
+
+#post .postTitle {
+    font-size: 2.3rem;
+    margin: 27vh 0 9vh;
 }
 
 #post h1 {
     font-size: 1.9rem;
-    margin: 2rem 0 1.5rem;
+    margin: 5rem 0 1.5rem;
 }
 
 #post h2 {
@@ -41,8 +44,17 @@
 
 #post p {
     font-size: 1.2rem;
-    text-indent: .6rem;
+    margin-top: 1rem;
+    font-weight: 300;
 }
+
+#post .nMargin {margin: 0 !important;}
+#post .p500 {font-weight: 100;}
+#post .p200 {font-weight: 200;}
+#post .p400 {font-weight: 400;}
+#post .p500 {font-weight: 500;}
+#post .p600 {font-weight: 600;}
+#post .p700 {font-weight: 700;}
 
 #post figure {
     margin-bottom: 1rem;
@@ -52,6 +64,19 @@
 
 #post figure img {
     width: 100%;
+}
+
+#post .indice li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#post .indice li a {
+    transition: all .4s ease-in-out;
+}
+
+#post .indice li a:hover {
+    padding-left: .5rem;
 }
 
 @media screen and (max-width: 800px) {
