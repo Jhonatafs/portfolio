@@ -14,10 +14,9 @@
     max-width: 600px;
 }
 
-h1, h2, h3, h4, h5, span, li {
+h1, h2, h3, h4, h5, span, li, figcaption {
     color: var(--color-text);
 }
-
 a {
     text-decoration: none;
     color: var(--color-lux) !important;
