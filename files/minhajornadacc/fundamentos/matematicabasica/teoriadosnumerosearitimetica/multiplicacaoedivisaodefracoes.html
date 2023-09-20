@@ -20,33 +20,147 @@
     </nav>
     <article id="post">
         <h1>Multiplicação e Divisão de Frações</h1>
-        <p>A multiplicação é como um atalho que facilita a soma de números para aqueles que são habilidosos nesse método. Nas frações, esse conceito funciona da mesma forma. Vamos usar o exemplo da pizza novamente. Como seria a multiplicação de (7/8) por (5/10)? Podemos calcular isso da seguinte maneira:</p>
-        <figure>
-            <img src="/img/multiplicacaoedivisaodefracoes-fig1.png" alt="">
-            <figcaption>Forma excrita: 7/8 * 5/10 = (7*5)/(8*10) = 35/80 = 7/16.</figcaption>
-        </figure>
-        <p>A divisão de frações pode ser abordada de outra maneira interessante: podemos escrevê-la como uma multiplicação. Por exemplo:</p>
-        <figure>
-            <img src="/img/multiplicacaoedivisaodefracoes-fig2.png" alt="">
-            <figcaption>Forma excrita: 7/8 ÷ 5/10 = 7/8 * (5/10)^-1.</figcaption>
-        </figure>
+        <p>A multiplicação é como um atalho que facilita a soma de números para aqueles que são habilidosos nesse método. Nas frações, esse conceito funciona da mesma forma. Vamos usar o exemplo da pizza novamente. Como seria a multiplicação de 
+        <math>
+            <mfrac>
+                <mn>7</mn>
+                <mn>8</mn>
+            </mfrac>
+        </math>
+        por 
+        <math>
+            <mfrac>
+                <mn>5</mn>
+                <mn>10</mn>
+            </mfrac>
+        </math>
+        ? Podemos calcular isso da seguinte maneira:
+        <math>
+            <mfrac>
+                <mn>7</mn>
+                <mn>8</mn>
+            </mfrac>
+            <mo>*</mo>
+            <mfrac>
+                <mn>5</mn>
+                <mn>10</mn>
+            </mfrac>
+            <mo>=</mo>
+            <mfrac>
+                <mrow>
+                    <mn>7</mn>
+                    <mo>*</mo>
+                    <mn>5</mn>
+                </mrow>
+                <mrow>
+                    <mn>8</mn>
+                    <mo>*</mo>
+                    <mn>10</mn>
+                </mrow>
+            </mfrac>
+            <mo>=</mo>
+            <mfrac>
+                <mn>35</mn>
+                <mn>80</mn>
+            </mfrac>
+            <mo>=</mo>
+            <mfrac>
+                <mn>7</mn>
+                <mn>16</mn>
+            </mfrac>
+        </math>
+        </p>
+        <p>A divisão de frações pode ser abordada de outra maneira interessante: podemos escrevê-la como uma multiplicação. Por exemplo:
+        <math>
+            <mfrac>
+                <mn>7</mn>
+                <mn>8</mn>
+            </mfrac>
+            <mo>÷</mo>
+            <mfrac>
+                <mn>5</mn>
+                <mn>10</mn>
+            </mfrac>
+            <mo>=</mo>
+            <mfrac>
+                <mn>7</mn>
+                <mn>8</mn>
+            </mfrac>
+            <mo>*</mo>
+            <msup>
+                <mrow>
+                    <mo>(&nbsp;</mo>
+                    <mfrac>
+                        <mn>5</mn>
+                        <mn>10</mn>
+                    </mfrac>
+                    <mo>&nbsp;)</mo>
+                </mrow>
+                <mn>-1</mn>
+            </msup>
+        </math>
+        </p>
         <p>Mas o que vem a ser esse “-1”? Antes de continuarmos com a divisão de frações, vamos entender o conceito de potenciação.</p>
         <p>A potenciação é uma operação matemática. A multiplicação é um atalho para a soma repetida, a potenciação é um atalho para a multiplicação repetida.</p> 
-        <p>Vou explicar com exemplos, representamos 3+3+3+3+3 como 3*5, e o que fazemos quando substituímos o operador “+” pelo “*”? Usamos potenciação, veja: em 3*3*3*3*3, podemos pegar o 3 e elevar ele a quinta potência, já que ele é repetido 5 vezes, ficando 3^5, e caso o 5 fosse negativo, isso significa que o 3 é uma fração, onde o 3 é o denominador:</p>
-        <figure>
-            <img src="/img/multiplicacaoedivisaodefracoes-fig3.png" alt="">
-            <figcaption>Forma excrita: 3^5 = 1/3^5.</figcaption>
-        </figure>
+        <p>Vou explicar com exemplos, representamos 3+3+3+3+3 como 3*5, e o que fazemos quando substituímos o operador “+” pelo “*”? Usamos potenciação, veja: em 3*3*3*3*3, podemos pegar o 3 e elevar ele a quinta potência, já que ele é repetido 5 vezes, ficando 
+        <math>
+            <msup>
+                <mn>3</mn>
+                <mn>5</mn>
+            </msup>
+        </math>
+        , e caso o 5 fosse negativo, isso significa que o 3 é uma fração, onde o 3 é o denominador ou seja:
+        <math>
+            <msup>
+                <mn>3</mn>
+                <mn>-5</mn>
+            </msup>
+            <mo>=</mo>
+            <mfrac>
+                <mn>1</mn>
+                <mrow>
+                    <msup>
+                        
+                        <mn>3</mn>
+                        <mn>5</mn>
+                    </msup>
+                </mrow>
+            </mfrac>
+        </math>
+        </p>
         <p>Entendendo sobre potenciação, podemos voltar para a divisão.</p>
-        <p>Então sabemos que:</p>
+        <p>Então sabemos que:
+            <math>
+                <mfrac>
+                    <mn>7</mn>
+                    <mn>8</mn>
+                </mfrac>
+                <mo>÷</mo>
+                <mfrac>
+                    <mn>5</mn>
+                    <mn>10</mn>
+                </mfrac>
+                <mo>=</mo>
+                <mfrac>
+                    <mn>7</mn>
+                    <mn>8</mn>
+                </mfrac>
+                <mo>*</mo>
+                <msup>
+                    <mrow>
+                        <mo>(&nbsp;</mo>
+                        <mfrac>
+                            <mn>5</mn>
+                            <mn>10</mn>
+                        </mfrac>
+                        <mo>&nbsp;)</mo>
+                    </mrow>
+                    <mn>-1</mn>
+                </msup>
+            </math>
+        , logo podemos trocar o 5 e o 10 de lugar para tirmos esse "-1" ficando:</p>
         <figure>
-            <img src="/img/multiplicacaoedivisaodefracoes-fig2.png" alt="">
-            <figcaption>Forma excrita: 7/8 ÷ 5/10 = 7/8 * (5/10)^-1.</figcaption>
-        </figure>
-        <p>Logo podemos trocar o 5 e o 10 de lugar para tirmos esse "-1" ficando:</p>
-        <figure>
-            <img src="/img/multiplicacaoedivisaodefracoes-fig4.png" alt="">
-            <figcaption>Forma excrita: (7/8)*(10/5) = 70/40 = 7/4 .</figcaption>
+            <img src="/img/multiplicacaoedivisaodefracoes-fig4.png" alt="(7/8)*(10/5) = 70/40 = 7/4">
         </figure>
         
     </article>
