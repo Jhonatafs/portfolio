@@ -8,6 +8,11 @@
     <script src="https://kit.fontawesome.com/7f2a2658dd.js" 
     crossorigin="anonymous"></script>
     <script src="https://fred-wang.github.io/mathml.css/mspace.js"></script>
+    <script src="https://fred-wang.github.io/TeXZilla/TeXZilla-min.js"></script>
+    <script src="https://fred-wang.github.io/TeXZilla/examples/customElement.js"></script>
+    <link rel="stylesheet" href="https://fred-wang.github.io/MathFonts/STIX/mathfonts.css" />
+
+    <link rel="stylesheet" href="https://fred-wang.github.io/MathFonts/LatinModern/mathfonts.css" />
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style-all.css">
     <link rel="stylesheet" href="/css/style-post.css">
@@ -22,18 +27,20 @@
     </nav>
     <article id="post">
         <h1>Ordem das Operações</h1>
-        <p>A ordem das operações está diretamente ligada à precisão do resultado, e segue um padrão bem definido. Podemos usar as siglas "PEMDAS" para lembrar essa ordem, usaremos o seguinte exemplo:
+        <p>A matemática fundamenta-se em axiomas, regras, lógica, princípios, orientações e convenções. Os axiomas são verdades que não necessitam ser provadas; é como demonstrar que para morrer, é necessário estar vivo. As regras são as normas a serem seguidas. Os princípios são ideias que guiam. As diretrizes fornecem orientações claras. As convenções, por sua vez, são acordos estabelecidos entre indivíduos ou organizações.</p>
+        <p>A ordem das operações matemáticas foi estabelecida por convenção, padronizando que primeiramente devemos resolver parênteses, seguidos por expoentes, como potenciação e radiciação. Em seguida, multiplicação ou divisão e, por fim, soma ou subtração. No entanto, é importante entender que as quatro operações básicas (adição, subtração, multiplicação e divisão) sempre devem ser resolvidas da esquerda para a direita. Vejamos um exemplo prático:</p>
+        <p>Dado a expresão matemática 
         <math>
             <mn>5</mn>
             <mo>+</mo>
             <mn>2</mn>
             <mo>/</mo>
-            <msup>
+            <mo>(</mo>
+        </math>
+        <la-tex>{\sqrt{9}}</la-tex>
+        <math>    
+            <msup>        
                 <mrow>
-                    <mo>(</mo>
-                    <msqrt>
-                        <mn>9</mn>
-                    </msqrt>
                     <mo>*</mo>
                         <mo>(</mo>
                         <mn>4</mn>
@@ -45,30 +52,110 @@
                 <mn>2</mn>
             </msup>
         </math>
-        , primeiro resolvemos o P de Parênteses e tudo que está dentro dele, que no nosso exemplo é
-        <math>
-            <mo>(</mo>
-            <msqrt>
-                <mn>9</mn>
-            </msqrt>
-            <mo>*</mo>
-            <mo>(</mo>
-            <mn>4</mn>
-            <mo>-</mo>
-            <mn>2</mn>
-            <mo>)</mo>
-            <mo>)</mo>
-        </math>
-        começamos com o parênteses dentro do parênteses:
-        <math>
-            <mo>(</mo>
-            <mn>4</mn>
-            <mo>-</mo>
-            <mn>2</mn>
-            <mo>)</mo>
-        </math>
-        e depois com 
         </p>
+        <p>Primeiro, resolvemos tudo que está entre parênteses, trabalhando de fora para dentro. Iniciamos com o parênteses interno
+        <math>
+            <mo>(</mo>
+            <mn>4</mn>
+            <mo>-</mo>
+            <mn>2</mn>
+            <mo>)</mo>
+            <mo>=</mo>
+            <mn>2</mn>
+        </math>
+        e, em seguida, com o externo
+        <math>
+            <mo>(</mo>
+        </math>
+        <la-tex>{\sqrt{9}}</la-tex>
+        <math>    
+            <msup>        
+                <mrow>
+                    <mo>*</mo>
+                        <mo>2</mo>
+                        <mo>)</mo>
+                    </mrow>
+                <mn>2</mn>
+            </msup>
+        </math>
+        . Contudo, antes disso, é necessário resolver a radiciação, 
+        <la-tex>{\sqrt{9}}</la-tex>
+        <math>
+            <mo>=</mo>
+            <mn>3</mn>
+        </math>
+        , então 
+        <math>
+            <mn>3</mn>
+            <mo>*</mo>
+            <mn>2</mn>
+            <mo>=</mo>
+            <mn>6</mn>
+        </math>
+        . Assim sobrando  
+        <math>
+            <msup>
+                <mrow>
+                    <mo>(</mo>
+                    <mn>6</mn>
+                    <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mn>36</mn>
+        </math></p>
+        <p>
+        Após resolver os parênteses, continuamos a resolver a expressão  
+        <math>
+            <mn>5</mn>
+            <mo>+</mo>
+            <mn>2</mn>
+            <mo>/</mo>
+            <mo>36</mo>
+        </math>
+        . Nessa etapa, começamos com a divisão
+        <math>
+            <mn>2</mn>
+            <mo>/</mo>
+            <mn>36</mn>
+        </math>
+        , que resulta em 
+        0.05555555555555555555555555555556. Esse número nos permite explorar um novo conceito: a aproximação. Quando lidamos com muitos dígitos decimais, é comum arredondar o número. Se o último dígito for maior ou igual a 5, arredondamos para cima; caso contrário, arredondamos para baixo. No caso deste número periódico, o último dígito é 6, então para arredondá-lo para o mais próximo, adicionamos 4 a ele, tornando-o 10. Com isso, o 5 que o precede se torna 6. Repetindo esse processo, transformamos a dízima periódica 0,05555555555555555555555555555556 em 
+        0,06.</p>
+        <p>Nossa expresão está quase no fim, nos dando a liberdade de resolver as adições ou subtrações. Neste caso, é a adição que se apresenta na nossa expressão:
+        <math>
+            <mn>5</mn>
+            <mo>+</mo>
+            <mn>0.06</mn>
+            <mo>=</mo>
+            <mn>5.06</mn>
+        </math>. Portanto, resolvendo a expressão completa:
+        <math>
+            <mn>5</mn>
+            <mo>+</mo>
+            <mn>2</mn>
+            <mo>/</mo>
+            <mo>(</mo>
+        </math>
+        <la-tex>{\sqrt{9}}</la-tex>
+        <math>    
+            <msup>        
+                <mrow>
+                    <mo>*</mo>
+                        <mo>(</mo>
+                        <mn>4</mn>
+                        <mo>-</mo>
+                        <mn>2</mn>
+                        <mo>)</mo>
+                        <mo>)</mo>
+                    </mrow>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mn>5,06</mn>
+        </math>.</p>
+        <p>Ao seguir a ordem correta das operações, alcançamos o resultado preciso. Agora que compreendemos como funciona essa ordem, podemos resumi-la em uma palavra simples: PEMA, onde o "P" representa Parênteses, o "E" denota Expoentes, o "M" representa Multiplicação ou Divisão, e, por fim, o "A" simboliza Adição ou Subtração.</p>
     </article>
     <nav id="menu">
         <span>Próx.: <a href="../geometria.html">1.2.3 Geometria</a>, 
