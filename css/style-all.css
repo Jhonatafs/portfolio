@@ -14,7 +14,7 @@
     max-width: 600px;
 }
 
-h1, h2, h3, h4, h5, span, li, figcaption, math {
+h1, h2, h3, h4, h5, span, li, figcaption, math, la-tex {
     color: var(--color-text);
 }
 
@@ -28,7 +28,7 @@ body {
     max-width: 600px;
 }
 
-math {
+math, la-tex {
     line-height: 115%;
     font-weight: 300;
 }
