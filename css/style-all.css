@@ -14,9 +14,10 @@
     max-width: 600px;
 }
 
-h1, h2, h3, h4, h5, span, li, figcaption {
+h1, h2, h3, h4, h5, span, li, figcaption, math {
     color: var(--color-text);
 }
+
 a {
     text-decoration: none;
     color: var(--color-lux) !important;
@@ -25,6 +26,15 @@ a {
 body {
     background-color: var(--body-background);
     max-width: 600px;
+}
+
+math {
+    line-height: 115%;
+    font-weight: 300;
+}
+
+math mn {
+    padding-top: .1rem;
 }
 
 p {

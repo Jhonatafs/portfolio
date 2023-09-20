@@ -66,10 +66,19 @@
     margin-bottom: 1rem;
     border: 1px dashed var(--color-lux);
     padding: .4rem .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #post figure img {
-    width: 100%;
+    max-width: 100%;
+}
+
+#post figcaption {
+    margin-top: .3rem;
+    font-size: .9rem;
+    font-weight: 300;
 }
 
 #post .indice li {
