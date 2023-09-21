@@ -20,7 +20,11 @@
 
 #post .postTitle {
     font-size: 2.3rem;
-    margin: 27vh 0 9vh;
+    margin-top: 27vh
+}
+
+#post .postSubtitulo {
+    margin-bottom: 9vh;
 }
 
 #post h1 {
