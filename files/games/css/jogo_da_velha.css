@@ -1,0 +1,73 @@
+:root {
+    --body-background: #383838;
+    --color-text: #dfdfdf;
+    --color-category: #9ead7a;
+    --color-lux: #ad7a7a;
+}
+
+#logo {
+    text-align: left;
+    padding: 3rem 0 0;
+    font-size: 2rem;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#status {
+    font-size: 2.5rem;
+    color: var(--color-lux);  
+    margin: calc(100vh/10) auto 1rem;
+}
+
+#game-align {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: .3rem;
+}
+
+#game .home {
+    width: calc(100vh/7);
+    height: calc(100vh/7);
+    border-radius: 5%;
+    background-color: var(--color-category);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(100vh/10);
+    font-family: 'Neucha', cursive;
+    color: var(--body-background);
+    cursor: pointer;
+}
+
+#game .winner {
+    background-color: var(--color-lux);
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    margin-top: 5vh;
+}
+
+#buttons .btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--color-category);
+    color: var(--body-background);
+    width: calc(100vh/7);
+    height: calc(100vh/10);
+    cursor: pointer;
+}
+
+.active-mode {
+    background-color: var(--color-lux)!important;
+    border-radius: 5% !important;
+}

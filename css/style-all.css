@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /*Colors*/
+    --body-background: #383838;
+    --color-lux: #ad7a7a;
+    --color-category: #9ead7a;
+    --color-text: #dfdfdf;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    max-width: 600px;
+}
+
+h1, h2, h3, h4, h5, span, li, figcaption, math, la-tex {
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-lux) !important;
+}
+
+body {
+    background-color: var(--body-background);
+    max-width: 600px;
+}
+
+math, la-tex {
+    line-height: 115%;
+    font-weight: 300;
+}
+
+math mn {
+    padding-top: .1rem;
+}
+
+p {
+    color: var(--color-text);
+    line-height: 140% !important;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+}
+
+li {
+    line-height: 140% !important;
+}
+
+/**Footer
+*/
+footer {
+    margin: 1rem auto 2rem;
+    max-width: 90vw;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+    gap: 3%;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a, li {
+    margin: 0;
+}
+
+footer i {
+    color: var(--color-category);
+}
+
+
+@media screen and (max-width: 800px){
+    body {
+        width: 90vw;
+        max-width: 90vw;
+    }
+
+    * {
+        max-width: 90vw !important;
+    }
+}
