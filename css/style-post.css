@@ -15,7 +15,7 @@
 }
 
 #post h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin: 3rem 0 1.5rem;
 }
 
@@ -83,6 +83,17 @@
 
 #post .indice li a:hover {
     padding-left: .5rem;
+}
+
+#post table {
+    text-align: center;
+    color: var(--color-text);
+    width: 100%;
+}
+
+#post th, td {
+    background-color: #00000034;
+    padding: .3rem 0;
 }
 
 .cap {
