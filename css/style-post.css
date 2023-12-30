@@ -32,6 +32,7 @@
 #post h4 {
     font-size: 1.3rem;
     margin: 1.5rem 0 .8rem;
+    text-align: right;
 }
 
 #post h5 {
@@ -70,6 +71,15 @@
     margin-top: .3rem;
     font-size: .9rem;
     font-weight: 300;
+}
+
+#post li {
+    margin-left: 2rem;
+}
+
+#post li p {
+    padding: 0;
+    margin: .3rem;
 }
 
 #post .indice li {
